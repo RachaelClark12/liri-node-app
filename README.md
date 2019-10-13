@@ -22,7 +22,7 @@ APIs Used:
 # Functionality
 movie-this
 1. User can enter the command 'movie-this' followed by a movie name to get details on the movie:
-(/raw.github.com/rachaelclark12/liri-node-app/master/screenshots/movie-this_user_input.png)
+![Screenshot](/raw.github.com/RachaelClark12/liri-node-app/master/screenshots/movie-this_user_input.PNG)
 
 
 
