@@ -33,7 +33,6 @@ function concertThis() {
 
     axios.get(queryURL).then(
         function (concertResponse) {
-
             console.log('Artist: ' + concertResponse.data[0].lineup[0]);
             console.log('Venue: ' + concertResponse.data[0].venue.name);
             console.log('City: ' + concertResponse.data[0].venue.city);
