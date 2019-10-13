@@ -9,12 +9,12 @@ LIRI understands four different commands:
     4. 'do-what-it-says' - uses readFile method to access the random.txt file and pull and execute the command and search
 
 # Technology
-Technology Used:
+<br>Technology Used:
     Axios: https://www.npmjs.com/package/axios
     Moment: https://www.npmjs.com/package/moment
     DotEnv: https://www.npmjs.com/package/dotenv
 
-APIs Used: 
+<br>APIs Used: 
     Spotify: https://www.npmjs.com/package/node-spotify-api
     OMdB: http://www.omdbapi.com/
     BandsInTown: https://www.artists.bandsintown.com/bandsintown-api
