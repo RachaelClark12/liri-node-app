@@ -22,7 +22,7 @@ APIs Used:
 # Functionality
 movie-this
 1. User can enter the command 'movie-this' followed by a movie name to get details on the movie:
-![Screenshot](/screenshots/movie-this_user_input.PNG)
+![Screenshot](/screenshots/move-this_user_input.PNG)
 
 
 
