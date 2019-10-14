@@ -43,3 +43,6 @@ do-what-it-says
 
 # Deployed
 Github Repo: https://github.com/RachaelClark12/liri-node-app
+
+# Developer
+Rachael A. Clark
