@@ -9,15 +9,15 @@ LIRI understands four different commands:
     4. 'do-what-it-says' - uses readFile method to access the random.txt file and pull and execute the command and search
 
 # Technology
-Technology Used:<br>
-    Axios: https://www.npmjs.com/package/axios
-    Moment: https://www.npmjs.com/package/moment
-    DotEnv: https://www.npmjs.com/package/dotenv
+Technology Used:
+    <br>Axios: https://www.npmjs.com/package/axios
+    <br>Moment: https://www.npmjs.com/package/moment
+    <br>DotEnv: https://www.npmjs.com/package/dotenv
 
-APIs Used: <br>
-    Spotify: https://www.npmjs.com/package/node-spotify-api
-    OMdB: http://www.omdbapi.com/
-    BandsInTown: https://www.artists.bandsintown.com/bandsintown-api
+<br>APIs Used:
+    <br>Spotify: https://www.npmjs.com/package/node-spotify-api
+    <br>OMdB: http://www.omdbapi.com/
+    <br>BandsInTown: https://www.artists.bandsintown.com/bandsintown-api
 
 # Functionality
 movie-this
@@ -32,11 +32,13 @@ concert-this
 
 spotify-this-song
 1. User can enter the command 'spotify-this-song' followed by a song title to get the details on that song:
-
+![Screenshot](/screenshots/spotify-this-song_user_input.PNG)
 2. If user does not enter a song title, LIRI will return the details of 'The Sign by Ace of Bass':
+![Screenshot](/screenshots/spotify-this-song_no_user_input.PNG)
 
 do-what-it-says
 1. User can enter the command 'do-what-it-says' and LIRI will access a built in text file to perform a random command:
+![Screenshot](/screenshots/do-what-it-says.PNG)
 
 
 # Deployed

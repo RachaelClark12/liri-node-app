@@ -44,18 +44,19 @@ function concertThis() {
 //Song Function using Spotify API
 function spotifyThisSong() {
     const spotify = new Spotify(keys.spotify);
-
+    if (!userInput) {
+        userInput = 'The Sign, Ace of Base';
+        spotifyThisSong();
+    }
+    else {
     spotify.search({ type: 'track', query: userInput })
-        .then(function (err, songResponse) {
-            if (err) {
-                return console.log('Error occurred: ' + err);
-            }
-            if (!userInput) {
-                userInput = 'the sign';
-                spotifyThisSong();
-            }
-            console.log(songResponse.tracks.items[0].artists[0].name);
-        })
+        .then(function (songResponse) {
+            console.group('Song Name: ' + songResponse.tracks.items[0].name);
+            console.log('Artist Name: ' + songResponse.tracks.items[0].artists[0].name)
+            console.log('Album Name: ' + songResponse.tracks.items[0].album.name);
+            console.log('Preview Link: ' + songResponse.tracks.items[0].artists[0].external_urls.spotify)
+        });
+    };
 };
 
 //Movie Function using OMdB API
@@ -82,10 +83,10 @@ function movieThis() {
 
 //Random Function using Random.txt File
 function doWhatItSays() {
-    fs.readFile('random.txt', function(data) {
-        let dataArr = data.split(',');
-        userSelect = dataArr[0];
-        userInput = dataArr[1];
-        command(userSelect, userInput);
+    fs.readFile('random.txt', "utf8", function (err, data) {
+        let dataArray = data.split(",");
+        userSelect = dataArray[0];
+        userInput = dataArray[1];
+        spotifyThisSong(userInput);
     });
 }
